@@ -5,8 +5,23 @@ The Manning equation is a widely used in water resources. It can be used to comp
 ![Graph](https://github.com/Pariasrz/Manning-equation-calculator/blob/main/manning%20formular.png)
 
 Where:
+
 Q = Discharge or Flow Rate (m^3/s)
+
 n = Roughness Coefficient
-A = Flow Area (m^2)
-R = Hydraulic Radius (m)
+
 s = Channel Slope (m/m)
+
+R = Hydraulic Radius (m)
+
+![Graph](https://github.com/Pariasrz/Manning-equation-calculator/blob/main/img/formula_2.png)
+
+A = Flow Area (m^2)
+
+![Graph] (https://github.com/Pariasrz/Manning-equation-calculator/blob/main/img/formula_3.png)
+
+##Input
+The inputs of this program are Q, b, z, s, and n. 
+
+##Output
+The outputs are the depth of the channel (m) and the velocity in the channel (m/s). It can also draw the section of the channel. 
