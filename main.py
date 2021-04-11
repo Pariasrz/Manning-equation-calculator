@@ -1,11 +1,11 @@
 import math
 
 
-q = float(input('Please Enter Discharge \n'))
-b = float(input('Please Enter Bottom Width \n'))
-z = float(input('Please Enter Side Slope \n'))
-s = float(input('Please Enter Longitudnial Slope\n'))
-n = float(input('Please Enter Roughness Coefficient \n'))
+q = float(input('Please Enter Discharge [Q(m^3/s)]\n'))
+b = float(input('Please Enter Bottom Width [B(m)]\n'))
+z = float(input('Please Enter Side Slope [Z]\n'))
+s = float(input('Please Enter Longitudnial Slope [S]\n'))
+n = float(input('Please Enter Roughness Coefficient [N]\n'))
 
 k = b**(8/3)*n*q*(s**(-0.5))
 
@@ -18,7 +18,7 @@ else:
 
 if (b == 0):
     k = n*q*(s**-(0.5))
-    yn = k**(3/8)*z**(-5/8)*(4*(1+z^2))**(1/8)
+    yn = k**(3/8)*z**(-5/8)*(4*(1+z**2))**(1/8)
     
 yn = 0.5*yn
 
@@ -30,7 +30,7 @@ while(True):
     qc = 1/n*a*r**(2/3)*s**0.5
     
     if (qc >= q):
-        print('\n The Depth of The Channel is ', yn)
-        print('\n The Velocity in The Channel is ', q/a)
+        print('\n The Depth of The Channel is [Yn (m)] ', yn)
+        print('\n The Velocity in The Channel is [Vn (m/s)] ', q/a)
     
-    break
+        break
