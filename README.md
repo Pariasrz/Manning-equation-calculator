@@ -20,6 +20,8 @@ A = Flow Area (m^2)
 
 ![Graph](https://github.com/Pariasrz/Manning-equation-calculator/blob/main/img/formula_3.png)
 
+(b is bottom width of the section, y is the liquid depth) 
+
 ## Input
 The inputs of this program are Q, b, z, s, and n. 
 
